@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useMoralis } from "react-moralis";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
@@ -44,12 +45,26 @@ const Login = ({ modal, setModal }) => {
         </motion.div>
 
         <div className="text-white text-center">
-            <p>Don't have a wallet?</p>
+        <p className="text-white">
+            Don't have MetaMask account
+            </p>
+            <p className="text-white">click 👉{" "}
+            <Link href="https://metamask.io/" passHref>
+              <a
+                className="text-orange-300 font-bold underline decoration-solid hover:text-orange-600"
+                target="_blank"
+              >
+                Here
+              </a>
+            </Link>{" "}
+            to create.
+          </p>
+          <br />
             <p
               className="font-bold hover:text-[indigo] text-sm underline  leading-3 cursor-pointer"
               onClick={() => setModal(true)}
             >
-              Sign in with email and password
+              Or sign in with email and password
             </p>
           </div>
       <AnimatePresence exitBeforeEnter>
