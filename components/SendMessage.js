@@ -38,7 +38,7 @@ function SendMessage({ endOfMessangesRef }) {
         type="text" 
         value={message}
         onChange={(e)=>setMessage(e.target.value)}
-        placeholder={`Enter a message ${user.getUsername()}...`}
+        placeholder={`Enter a message ${user?.getUsername()}...`}
         className=" relative flex-grow outline-none bg-transparent text-white placeholder-gray-500 pr-5"
       />
       

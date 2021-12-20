@@ -22,7 +22,7 @@ const Header = () => {
         </div>
         <div className="flex space-x-3 md:space-x-6 my-auto">
           <h1 className="text-lg md:text-3xl text-yellow-500 font-bold truncate">
-            {user.getUsername()}
+            {user?.getUsername()}
           </h1>
           <ChangeUsername />
         </div>

@@ -5,7 +5,7 @@ import SendMessage from "./SendMessage";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const MINS_DURATION = 15;
+const MINS_DURATION = 15000;
 
 function Messages() {
   const {user} = useMoralis();
@@ -42,7 +42,7 @@ function Messages() {
         }}
         transition={{type: 'spring', duration: 1.5}}
         >
-        <p>You're up to date {user.getUsername()}!</p>
+        <p>You're up to date {user?.getUsername()}!</p>
       </motion.div>
     </div>
   )
