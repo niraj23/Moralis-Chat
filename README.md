@@ -1,27 +1,17 @@
-# Next.js + Tailwind CSS Example
+# Moralis Chat
+Metaverse is a “shared virtual environment that people access via the Internet”. 
+The technology creates a set of virtual spaces where people can immerse themselves through 
+holograms/avatars to make it feel like they are in the same physical space. 
+However we've build a chat app using `react-js` `next-js` `taiwand-css` and `moralis`. 
+Moralis provides us the backend support for storing and retrieving data from blockchain.
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+![](https://i.imgur.com/8yhWZs0.png)
+![](https://i.imgur.com/N2rL7KV.png)
 
-## Preview
+## How to run?
+1. Visit `moralis.io` and `create a server`.
+2. Create a `.env.local` file in your project directory at `/project-name/`. And store NEXT_PUBLIC_APP_ID and NEXT_PUBLIC_SERVER_URL, which you will get from morlais server.
+3. Now install all the node dependencies `npm i`
+4. Run `npm run dev` to start the server Then  Navigate to `http://localhost:3000/`.
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
